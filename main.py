@@ -57,8 +57,8 @@ def get_test_data(path):
     return np.expand_dims(np.array(test_data), axis=-1), image_list
 
 
-def build_model():
-    load_weight = False
+def build_model(load_weight = False):
+    load_weight = load_weight
     iteration = 35
 
     # height = 738, width = 166
@@ -209,4 +209,4 @@ def draw_plot(history):
     plt.show()
 
 if __name__ == '__main__':
-    build_model()
+    build_model(load_weight=False)
