@@ -18,3 +18,6 @@ During the decoding process, we use deconvolution operations to restore these lo
 * PyCharm 2022.3.2
 * Anaconda 2.1.1
 * CUDA v11.2
+
+## Training Data
+All training data is stored in the "Training_Image_Data" directory, which was provided by Arash Rabbani.
