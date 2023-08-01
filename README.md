@@ -21,3 +21,5 @@ During the decoding process, we use deconvolution operations to restore these lo
 
 ## Training Data
 All training data is stored in the "Training_Image_Data" directory, which was provided by Arash Rabbani.
+
+## Train Model
