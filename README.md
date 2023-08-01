@@ -21,3 +21,18 @@ During the decoding process, we use deconvolution operations to restore these lo
 
 ## Training Data
 All training data is stored in the "Training_Image_Data" directory, which was provided by Arash Rabbani.
+
+## Train Model
+Simply run `main.py` to start training the model. At the program entry point, you can set the value of "load_weight" to indicate whether to load pre-trained weights. When "load_weight" is set to `False`, the program will not load pre-trained weights. On the other hand, when "load_weight" is set to `True`, it will load pre-trained weights. For the initial deployment, since there are no weight files available, the default setting should be set to `False`.
+
+```python
+if __name__ == '__main__':
+    build_model(load_weight=False)
+```
+
+After training is completed, the program will automatically generate weight files called `weights.h5` in the root directory of the project. At the same time, a folder selection dialog will appear, where you need to choose the folder containing the image data you want to process. The generated files after processing will be stored in the newly generated folder in the root directory.
+
+## Compute Average
+After running `average_height.py`, a matrix file analyzing the percentage of each category in each row of pixels will be generated. The file is in MAT format and can be opened using MATLAB. This file is saved in a folder with the same name as the folder containing the data to be processed, with the suffix "_average" appended.
+
+![Local Image](asset/persentage.png)
