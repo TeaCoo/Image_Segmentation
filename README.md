@@ -1,6 +1,8 @@
 # Image_Segmentation
 This project utilizes U-Net to construct a neural network for segmenting the liquid inside the pipes in the images. The liquid inside the pipe is divided into three parts: air, mixture, and water. The model takes a single-channel image of the pipe as input and outputs a three-channel mask image, where each channel corresponds to the three mentioned parts.
 
+![Local Image](asset/demoImage.png)
+
 ![Local Image](asset/segentaiondemo.png)
 
 # Model Structure
