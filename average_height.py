@@ -47,12 +47,13 @@ def compute_average():
 
         print("Saving...")
         # save image
+        """
         for i in range(len(air_average)):
             save_figure(figure_path, air_image_list.images[i].name,
                         air_average[i], mixture_average[i], water_average[i])
-
+        """
         # save mat
-        # save_mat(out_folder, item, air_average, mixture_average, water_average)
+        save_mat(out_folder, item, air_average, mixture_average, water_average)
         break
 
 
