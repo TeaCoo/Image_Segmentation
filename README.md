@@ -30,9 +30,9 @@ if __name__ == '__main__':
     build_model(load_weight=False)
 ```
 
-After training is completed, the program will automatically generate weight files in the root directory of the project. At the same time, a folder selection dialog will appear, where you need to choose the folder containing the image data you want to process. The generated files after processing will be stored in the newly generated folder in the root directory.
+After training is completed, the program will automatically generate weight files called `weights.h5` in the root directory of the project. At the same time, a folder selection dialog will appear, where you need to choose the folder containing the image data you want to process. The generated files after processing will be stored in the newly generated folder in the root directory.
 
 ## Compute Average
-After running average_height.py, a matrix file analyzing the percentage of each category in each row of pixels will be generated. The file is in MAT format and can be opened using MATLAB. This file is saved in a folder with the same name as the folder containing the data to be processed, with the suffix "_average" appended.
+After running `average_height.py`, a matrix file analyzing the percentage of each category in each row of pixels will be generated. The file is in MAT format and can be opened using MATLAB. This file is saved in a folder with the same name as the folder containing the data to be processed, with the suffix "_average" appended.
 
-![Local Image](asset/UNet.png)
+![Local Image](asset/persentage.png)
