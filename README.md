@@ -1,6 +1,9 @@
 # Image_Segmentation
 This project utilizes U-Net to construct a neural network for segmenting the liquid inside the pipes in the images.
 
+The structure of the U-Net:
+
+![Local Image](asset/UNet.png)
 
 ## Environment
 * Python 3.9.16
